@@ -1,24 +1,17 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import FlashCard from './components/FlashCard'
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h1>Flash Card App</h1>
       </header>
+      <main>
+          <FlashCard question='What is your name?' answer='Marloes' />
+          <FlashCard question='What is your age?' answer='25' />
+      </main>
     </div>
   );
 }
